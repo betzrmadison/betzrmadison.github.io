@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Exported from Figma">
+  <title>Exported Figma Design</title>
+  <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+  <div id="site-header"></div>
+  <script src="../components/site-header.js"></script>
+  <div class="rcas-93">
+    <div class="header-101">
+      <div class="header-102">
+        <p class="text-103"><span class="text-rgb-16-86-102">RCAS Website</span></p>
+        <p class="text-104"><span class="text-black"> Re-engineering a legacy Ruby on Rails platform to streamline
+            academic mentoring, scheduling, and student support services at MSOE.</span></p>
+      </div>
+    </div>
+    <div class="image-105">
+      <img src="../images/rcas-website.png" class="image-106" alt="image" />
+    </div>
+    <div class="experience-107">
+      <div class="project-2-108">
+        <div class="text-block-109">
+          <p class="text-110"><span class="text-black">Tech Stack</span></p>
+          <p class="text-111"><span class="text-black">Git, GitLab, Agile Workflows, Web Development, Ruby on Rails,
+              Relational Databases</span></p>
+        </div>
+      </div>
+      <div class="project-3-112">
+        <div class="text-block-113">
+          <p class="text-114"><span class="text-black">Role(s)</span></p>
+          <p class="text-115"><span class="text-black">Scrum Master, DevOps Lead, Notetaker</span></p>
+        </div>
+      </div>
+    </div>
+    <div class="quote-116">
+      <p class="text-117"><span class="text-black">Serving 350+ MSOE students &amp; faculty.</span></p>
+    </div>
+    <div class="text-block-1-118">
+      <div class="wrapper-119">
+        <div class="paragraph-120">
+          <p class="text-121"><span class="text-black">Overview</span></p>
+          <p class="text-122"><span class="text-black">The Raider Center for Academic Success (RCAS) platform is a
+              full-stack web application built to consolidate academic tutoring, peer mentoring, and administrative
+              scheduling into a single system for MSOE students. Inheriting a legacy codebase originally started in
+              2015, our four person team spent two semesters re-engineering the application to refactor core Ruby on
+              Rails backend logic, modernize aging database schemas, and expand automated test coverage. These updates
+              eliminated long-standing scheduling bugs, enhanced system security, and restored platform reliability
+              for campus-wide use.</span></p>
+        </div>
+        <div class="paragraph-123">
+          <p class="text-124"><span class="text-black">Key Technical Contributions &amp; Features</span></p>
+          <p class="text-125"><span class="text-black">Database Refactoring: Handled a full database overhaul to
+              rename and restructure our core scheduling module, shifting legacy "One-on-One" tables over to a unified
+              "Mentoring" setup across models, views, and controllers without breaking existing data.
+              Backend Permissions &amp; Security: Cleaned up authorization logic by pulling conditional permission
+              checks out of views and putting them into model-level helpers ("fat model, skinny controller") to lock
+              down access controls and block users from self-assigning appointments.
+              Flexible Input Handling: Added custom input logic to the tutoring request form so students can type in
+              unlisted professor names, keeping the form flexible without polluting or corrupting the admin master
+              database.
+              Automated &amp; BDD Testing: Wrote Cucumber and Gherkin test scenarios to cover core scheduling
+              workflows, and expanded our RSpec model/controller test suite to catch edge cases and bump up code
+              coverage.
+              Calendar &amp; Scheduling Fixes: Fixed double-booking bugs with custom backend validations for tutors
+              and students, and updated the frontend calendar to render a clean, rolling multi-week view.</span></p>
+        </div>
+        <div class="paragraph-126">
+          <p class="text-127"><span class="text-black">Agile Process &amp; Team Leadership</span></p>
+          <p class="text-128"><span class="text-black">Scrum Master &amp; DevOps Rotations: Ran sprint planning, daily
+              standups, and retros while handling GitLab merge request reviews, branch workflows, and making sure our
+              CI tests kept passing inside Docker.
+              Backlog Grooming &amp; Requirement Audits: Took charge of cleaning up backlog items, writing clear
+              acceptance criteria, and re-weighting sprint tasks so the team didn't hit roadblocks during
+              development.</span></p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  </div>
+  <div id="site-footer"></div>
+  <script src="../components/site-footer.js"></script>
+
+</body>
+
+</html>
