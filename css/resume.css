@@ -1,0 +1,86 @@
+/* Resume page styles */
+.resume-page {
+    width: 100%;
+    background: #ffffff;
+    padding-bottom: 48px;
+}
+
+.resume-shell {
+    width: min(900px, calc(100% - 48px));
+    margin: 0 auto;
+    padding: 32px 0 0;
+}
+
+.resume-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.resume-header h1 {
+    margin: 0;
+    font-family: var(--font-family-inter);
+    font-size: clamp(2.25rem, 4vw, 3rem);
+    line-height: 1.1;
+    letter-spacing: -0.04em;
+    color: var(--text-rgb-16-86-102);
+}
+
+.resume-section {
+    margin-top: 28px;
+}
+
+.resume-section__title {
+    margin: 0 0 12px;
+    text-align: left;
+    font-family: var(--font-family-inter);
+    font-size: clamp(1.5rem, 2vw, 2rem);
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    color: var(--text-rgb-16-86-102);
+}
+
+.resume-entry {
+    margin-bottom: 20px;
+}
+
+.resume-entry__title,
+.resume-entry__meta {
+    margin: 0;
+    font-family: var(--font-family-inter);
+    color: #000000;
+}
+
+.resume-entry__title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    line-height: 1.4;
+}
+
+.resume-entry__meta {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.72);
+}
+
+.resume-entry p,
+.resume-entry li {
+    font-family: var(--font-family-inter);
+    font-size: 1rem;
+    line-height: 1.7;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.resume-entry ul.resume-bullets {
+    margin: 10px 0 0 1.25rem;
+    padding: 0;
+}
+
+.resume-entry ul.resume-bullets li {
+    margin-bottom: 6px;
+}
+
+@media (max-width: 640px) {
+    .resume-shell {
+        width: min(100% - 24px, 900px);
+    }
+}

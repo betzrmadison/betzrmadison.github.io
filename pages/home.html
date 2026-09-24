@@ -4,47 +4,77 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Exported from Figma">
-  <title>Exported Figma Design</title>
+  <meta name="description" content="Madison Betz portfolio home page showcasing projects, experience, and interests.">
+  <title>Madison Betz | Home</title>
   <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/home.css">
 </head>
 
 <body>
   <div id="site-header"></div>
   <script src="../components/site-header.js"></script>
-  <div class="contact-287">
-    <div class="container-294">
-      <div class="hero-295">
-        <div class="text-296">
-          <p class="text-297"><span class="text-rgb-16-86-102">Say hello!</span></p>
-          <p class="text-298"><span class="text-black">My inbox is always open—feel free to drop a message or connect on
-              LinkedIn.</span></p>
-        </div>
-      </div>
-      <div class="text-row-299">
-        <div class="text-block-300">
-          <div class="text-block-1-301">
-            <p class="text-302"><span class="text-rgb-247-244-213">Email</span></p>
-            <p class="text-303"><span class="text-rgb-247-244-213">betz.rmadison@gmail.com
-              </span><span class="text-rgb-191-203-164">
-                I’d love to have a chat with you! Email is the quickest way to get a response from me.</span></p>
-          </div>
-          <div class="text-block-2-304">
-            <p class="text-305"><span class="text-rgb-247-244-213">LinkedIn</span></p>
-            <p class="text-306"><span class="text-rgb-247-244-213">https://www.linkedin.com/in/madison-betz/
-              </span><span class="text-rgb-191-203-164">
-                See what I’m up to and connect with me! I do my best to check messages.</span></p>
-          </div>
-        </div>
-      </div>
 
-    </div>
-  </div>
+  <main class="home-page site-main">
+    <section class="home-hero" aria-labelledby="home-title">
+      <div class="home-hero__inner">
+        <h1 id="home-title" class="home-hero__title">MADISON BETZ</h1>
+
+        <div class="home-about">
+          <img src="../images/senior-pic.png" class="home-about__image" alt="Madison Betz portrait" />
+          <div class="home-about__content">
+            <h2>About Me</h2>
+            <p>Hi, happy you came across my website! I’m a Software Engineering student who views problem-solving as a
+              creative process. I’m most in my element working with backend logic, real-time data, and systems where
+              code connects to real-world motion. I’m always excited to learn, take on new challenges, and turn
+              technical puzzles into clean, practical solutions.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="home-feature-grid" aria-labelledby="interests-title">
+      <div class="home-interests">
+        <h2 id="interests-title">Interests and hobbies</h2>
+        <p>Outside of my school and work, I’m pretty much always making, exploring, or learning something new. Huge
+          fan of Disney magic, cool cars, and getting outdoors for a nice hike or swim. When I’m staying in, you’ll
+          usually find me in the middle of a DIY craft—whether that’s crocheting, painting, trying out a new recipe in
+          the kitchen, or just curling up with a good book.</p>
+      </div>
+      <div class="home-feature home-feature--gallery" style="padding-top: 0;">
+        <img src="../images/smokey-mtn.png" class="home-interests__image" alt="smokey mountains" />
+        <img src="../images/cars.png" class="home-interests__image" alt="mclaren m6gt" />
+        <img src="../images/book.png" class="home-interests__image" alt="book" />
+      </div>
+    </section>
+
+    <section class="home-feature home-feature--accent" aria-label="Featured highlight cards">
+      <div class="home-feature__content">
+        <h2>McLaren Racing NEXT Graduate</h2>
+        <p>Selected for the McLaren Racing NEXT program, a week-long immersion into motorsport innovation and
+          cross-industry tech. Joined 24 women in STEM for leadership workshops, site visits to industry partners, and
+          firsthand insight into F1 engineering.</p>
+        <a class="button-link" href="https://lnkd.in/p/gXxS2dE5" target="_blank" rel="noopener noreferrer">See LinkedIn
+          Post</a>
+      </div>
+      <img src="../images/senna.png" class="home-feature__image" alt="McLaren Racing event" />
+    </section>
+
+    <section class="home-feature home-feature--accent" aria-label="Project preview">
+      <img src="../images/pixel-player.png" class="home-feature__image" alt="Pixel Park project preview" />
+      <div class="home-feature__content">
+        <h2>Pixel Park</h2>
+        <p>In progress project! Bridges in-game Minecraft ride telemetry with physical microcontrollers and a central
+          visualizer dashboard. Powered by AI predictive maintenance models, it tracks live system metrics to detect
+          operational anomalies before breakdowns occur.</p>
+        <a class="button-link" href="projects.html">Go to Projects</a>
+      </div>
+    </section>
+  </main>
+
   <div id="site-footer"></div>
   <script src="../components/site-footer.js"></script>
-
 </body>
 
 </html>

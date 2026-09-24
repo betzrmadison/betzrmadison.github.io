@@ -4,91 +4,101 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Exported from Figma">
-  <title>Exported Figma Design</title>
+  <meta name="description" content="Pac-Man application project detail page for Madison Betz.">
+  <title>Madison Betz | Pac-Man</title>
   <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/project-pages.css">
 </head>
 
 <body>
   <div id="site-header"></div>
   <script src="../components/site-header.js"></script>
-  <div class="pac-man-47">
-    <div class="container-54">
-      <div class="header-55">
-        <div class="header-56">
-          <p class="text-57"><span class="text-rgb-16-86-102">Pac-Man Application</span></p>
-          <p class="text-58"><span class="text-black">Transitioning a containerized web game into a secure, highly
-              available cloud infrastructure with automated continuous delivery.</span></p>
-        </div>
-      </div>
-      <div class="image-59">
-        <img src="../images/pac-man-game.png" class="image-60" alt="image" />
-      </div>
-      <div class="experience-61">
-        <div class="project-2-62">
-          <div class="text-block-63">
-            <p class="text-64"><span class="text-black">Tech Stack</span></p>
-            <p class="text-65"><span class="text-black">Azure Kubernetes Service (AKS), Azure DevOps, Terraform, Docker,
-                Docker Scout (SBOMs), Keel, GitOps,</span></p>
+  <div class="project-page">
+    <div class="pac-man-47">
+      <div class="container-54">
+        <div class="header-55">
+          <div class="header-56">
+            <p class="text-57"><span class="text-rgb-16-86-102">Pac-Man Application</span></p>
+            <p class="text-58"><span class="text-black">Transitioning a containerized web game into a secure, highly
+                available cloud infrastructure with automated continuous delivery.</span></p>
           </div>
         </div>
-        <div class="project-3-66">
-          <div class="text-block-67">
-            <p class="text-68"><span class="text-black">Link to Play!</span></p>
-            <p class="text-69"><span class="text-black">Ms Pacman in HTML 5 Canvas</span></p>
+        <div class="project-main-image">
+          <img src="../images/pac-man-game.png" class="image-60" alt="image" />
+        </div>
+        <div class="experience-61">
+          <div class="project-2-62">
+            <div class="text-block-63">
+              <p class="text-64"><span class="text-black">Tech Stack</span></p>
+              <p class="text-65"><span class="text-black">Azure Kubernetes Service (AKS), Azure DevOps, Terraform,
+                  Docker,
+                  Docker Scout (SBOMs), Keel, GitOps,</span></p>
+            </div>
+          </div>
+          <div class="project-3-66">
+            <div class="text-block-67">
+              <p class="text-68"><span class="text-black">Link to Play!</span></p>
+              <p class="text-69"><span class="text-black">Ms Pacman in HTML 5 Canvas</span></p>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="text-block-1-70">
-        <div class="wrapper-71">
-          <div class="paragraph-72">
-            <p class="text-73"><span class="text-black">Overview</span></p>
-            <p class="text-74"><span class="text-black">Transformed a standalone, containerized Pacman web application
-                into a zero-downtime, production-ready system deployed on Azure Kubernetes Service. Over three major
-                iterations, we built automated CI/CD pipelines, secured the container supply chain, provisioned cloud
-                infrastructure with Infrastructure as Code (IaC), and set up GitOps-driven cluster deployments.</span>
-            </p>
-          </div>
-          <div class="paragraph-75">
-            <p class="text-76"><span class="text-black">Key Technical Contributions</span></p>
-            <p class="text-77"><span class="text-black">Infrastructure as Code (Terraform): Provisioned the full Azure
-                cloud footprint using Terraform, automating everything from initial Azure App Services to multi-node
-                Azure Kubernetes Service (AKS) clusters and resource groups.
-                Automated CI/CD &amp; Branching Strategy: Configured Azure DevOps pipelines to automate image builds and
-                Docker Hub pushes. Enforced a branch-aware strategy that restricted production releases strictly to
-                verified code merged into main.
-                Container Security &amp; Vulnerability Patching: Used Docker Scout and Software Bill of Materials (SBOM)
-                diff analysis to audit base Nginx images. Identified and resolved hundreds of vulnerabilities by pinning
-                container base images using explicit SHA hashes to guarantee immutable, secure builds.
-                GitOps &amp; In-Cluster Auto-Deployment: Deployed Keel inside the AKS cluster to create a pull-based
-                continuous deployment pipeline. Keel actively monitored Docker Hub for new tag releases and
-                automatically initiated rolling updates inside the cluster without external webhooks.
-                Load Balancing &amp; High Availability: Built declarative Kubernetes Deployment and Service manifests to
-                manage multi-replica pod clusters behind an Azure Load Balancer. Tested live traffic distribution across
-                pods and verified zero-downtime rolling updates during active application changes.</span></p>
-          </div>
-          <div class="paragraph-78">
-            <p class="text-79"><span class="text-black">Practical Takeaways</span></p>
-            <p class="text-80"><span class="text-black">Shift from Azure App Service to Managed Orchestration: Evolved
-                the deployment pipeline from a PaaS model to a declarative, cloud-native Kubernetes environment capable
-                of scaling pod replicas independently.
-                Pull vs. Push Continuous Deployment: Switched from external push-style webhooks to an internal
-                pull-based operator (Keel), allowing the cluster itself to manage rolling updates directly from the
-                registry.
-                Infrastructure Security: Managed Terraform state files securely using explicit .gitignore rules to
-                prevent credential leaks, and pinned container dependencies via SHA codes rather than floating tags like
-                latest.</span></p>
+        <div class="text-block-1-70">
+          <div class="wrapper-71">
+            <div class="paragraph-72">
+              <p class="text-73"><span class="text-black">Overview</span></p>
+              <p class="text-74"><span class="text-black">Transformed a standalone, containerized Pacman web application
+                  into a zero-downtime, production-ready system deployed on Azure Kubernetes Service. Over three major
+                  iterations, we built automated CI/CD pipelines, secured the container supply chain, provisioned cloud
+                  infrastructure with Infrastructure as Code (IaC), and set up GitOps-driven cluster deployments.</span>
+              </p>
+            </div>
+            <div class="paragraph-75">
+              <p class="text-76"><span class="text-black">Key Technical Contributions</span></p>
+              <p class="text-77"><span class="text-black">Infrastructure as Code (Terraform): Provisioned the full Azure
+                  cloud footprint using Terraform, automating everything from initial Azure App Services to multi-node
+                  Azure Kubernetes Service (AKS) clusters and resource groups.
+                  Automated CI/CD &amp; Branching Strategy: Configured Azure DevOps pipelines to automate image builds
+                  and
+                  Docker Hub pushes. Enforced a branch-aware strategy that restricted production releases strictly to
+                  verified code merged into main.
+                  Container Security &amp; Vulnerability Patching: Used Docker Scout and Software Bill of Materials
+                  (SBOM)
+                  diff analysis to audit base Nginx images. Identified and resolved hundreds of vulnerabilities by
+                  pinning
+                  container base images using explicit SHA hashes to guarantee immutable, secure builds.
+                  GitOps &amp; In-Cluster Auto-Deployment: Deployed Keel inside the AKS cluster to create a pull-based
+                  continuous deployment pipeline. Keel actively monitored Docker Hub for new tag releases and
+                  automatically initiated rolling updates inside the cluster without external webhooks.
+                  Load Balancing &amp; High Availability: Built declarative Kubernetes Deployment and Service manifests
+                  to
+                  manage multi-replica pod clusters behind an Azure Load Balancer. Tested live traffic distribution
+                  across
+                  pods and verified zero-downtime rolling updates during active application changes.</span></p>
+            </div>
+            <div class="paragraph-78">
+              <p class="text-79"><span class="text-black">Practical Takeaways</span></p>
+              <p class="text-80"><span class="text-black">Shift from Azure App Service to Managed Orchestration: Evolved
+                  the deployment pipeline from a PaaS model to a declarative, cloud-native Kubernetes environment
+                  capable
+                  of scaling pod replicas independently.
+                  Pull vs. Push Continuous Deployment: Switched from external push-style webhooks to an internal
+                  pull-based operator (Keel), allowing the cluster itself to manage rolling updates directly from the
+                  registry.
+                  Infrastructure Security: Managed Terraform state files securely using explicit .gitignore rules to
+                  prevent credential leaks, and pinned container dependencies via SHA codes rather than floating tags
+                  like
+                  latest.</span></p>
+            </div>
           </div>
         </div>
-      </div>
 
+      </div>
     </div>
-  </div>
-  <div id="site-footer"></div>
-  <script src="../components/site-footer.js"></script>
-
+    <div id="site-footer"></div>
+    <script src="../components/site-footer.js"></script>
 </body>
+
 
 </html>

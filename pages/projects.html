@@ -4,67 +4,62 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Exported from Figma">
-  <title>Exported Figma Design</title>
+  <meta name="description" content="Projects and work by Madison Betz.">
+  <title>Madison Betz | Projects</title>
   <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/projects.css">
 </head>
 
 <body>
   <div id="site-header"></div>
   <script src="../components/site-header.js"></script>
-  <div class="projects-373">
-    <div class="container-1-380">
-      <div class="hero-381">
-        <p class="text-382"><span class="text-rgb-16-86-102">Projects</span></p>
-      </div>
-      <div class="feature-cards-383">
-        <a href="pixel-park.html" style="text-decoration:none; color:inherit;">
-          <div class="card-1-384">
-            <img src="../images/minecart-small.png" class="image-385" alt="image" />
-            <div class="text-386">
-              <p class="text-387"><span class="text-black">Pixel Park</span></p>
-            </div>
-          </div>
-        </a>
-        <a href="pac-man.html" style="text-decoration:none; color:inherit;">
-          <div class="card-2-388">
-            <img src="../images/pacman-site.png" class="image-389" alt="image" />
-            <div class="text-390">
-              <p class="text-391"><span class="text-black">Pac-Man Application</span></p>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="feature-cards-392">
-        <a href="tapco.html" style="text-decoration:none; color:inherit;">
-          <div class="card-2-393">
-            <img src="../images/tapco-crosswalk.png" class="image-394" alt="image" />
-            <div class="text-395">
-              <p class="text-396"><span class="text-black">TAPCO Crosswalk Effectiveness Analysis</span></p>
-            </div>
-          </div>
-        </a>
-        <a href="rcas.html" style="text-decoration:none; color:inherit;">
-          <div class="card-3-397">
-            <img src="../images/rcas-logo.png" class="image-398" alt="image" />
-            <div class="text-399">
-              <p class="text-400"><span class="text-black">RCAS Website</span></p>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="text-401">
-        <div class="about-402">
-          <p class="text-403"><span class="text-black">My GitHub</span></p>
-          <p class="text-404"><span class="text-black">https://github.com/betzrmadison/</span></p>
-        </div>
-        <div class="divider-405"></div>
-      </div>
 
-    </div>
-  </div>
+  <main class="projects-page site-main">
+    <header class="page-header">
+      <h1>Projects</h1>
+    </header>
+
+    <section class="projects-grid" aria-label="Project list">
+      <a class="project-card" href="pixel-park.html">
+        <img src="../images/minecart-small.png" class="project-card__image" alt="Pixel Park project preview" />
+        <div class="project-card__body">
+          <h2 class="project-card__title">Pixel Park</h2>
+        </div>
+      </a>
+
+      <a class="project-card" href="pac-man.html">
+        <img src="../images/pacman-site.png" class="project-card__image" alt="Pac-Man application preview" />
+        <div class="project-card__body">
+          <h2 class="project-card__title">Pac-Man Application</h2>
+        </div>
+      </a>
+
+      <a class="project-card" href="tapco.html">
+        <img src="../images/tapco-crosswalk.png" class="project-card__image" alt="TAPCO project preview" />
+        <div class="project-card__body">
+          <h2 class="project-card__title">TAPCO Crosswalk Effectiveness Analysis</h2>
+        </div>
+      </a>
+
+      <a class="project-card" href="rcas.html">
+        <img src="../images/rcas-logo.png" class="project-card__image" alt="RCAS project preview" />
+        <div class="project-card__body">
+          <h2 class="project-card__title">RCAS Website</h2>
+        </div>
+      </a>
+    </section>
+
+    <section class="page-section" aria-label="GitHub section">
+      <div class="section-copy">
+        <h2>My GitHub</h2>
+        <p><a href="https://github.com/betzrmadison/" target="_blank"
+            rel="noopener noreferrer">https://github.com/betzrmadison/</a></p>
+      </div>
+    </section>
+  </main>
+
   <div id="site-footer"></div>
   <script src="../components/site-footer.js"></script>
 
