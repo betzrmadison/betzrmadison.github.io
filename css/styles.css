@@ -134,7 +134,7 @@ a {
   align-items: center;
   justify-content: space-between;
   gap: 24px;
-  width: min(1200px, calc(100% - 32px));
+  width: 100%;
   margin: 0 auto;
   padding-left: clamp(16px, 3vw, 64px);
   padding-right: clamp(16px, 3vw, 64px);
