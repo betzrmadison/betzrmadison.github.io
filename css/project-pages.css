@@ -45,7 +45,7 @@
 .project-page .header-102 {
     max-width: 1100px;
     margin: 0 auto;
-    text-align: left;
+    text-align: center;
 }
 
 .project-page .text-57,
@@ -57,6 +57,7 @@
 .project-page .text-151,
 .project-page .text-103 {
     margin: 0 0 12px;
+    text-align: center;
     font-family: var(--font-family-inter);
     font-size: clamp(2rem, 4vw, 3rem);
     line-height: 1.15;
@@ -69,9 +70,10 @@
 .project-page .text-12,
 .project-page .text-152,
 .project-page .text-104 {
-    margin: 0;
+    margin: 0 auto;
     width: min(100%, 800px);
     max-width: 800px;
+    text-align: center;
     font-family: var(--font-family-inter);
     font-size: 1.125rem;
     line-height: 1.6;
@@ -92,12 +94,30 @@
 .project-page .project-main-image .image-154,
 .project-page .project-main-image .image-106 {
     display: block;
-    width: min(100%, 1100px);
+    width: min(100%, 980px);
     max-width: 100%;
     height: auto;
     object-fit: cover;
     border-radius: 18px;
     box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
+    margin: 0 auto;
+}
+
+.project-page .quote-116 {
+    width: min(100%, 800px);
+    max-width: 800px;
+    margin: 0 auto 28px;
+    text-align: center;
+}
+
+.project-page .text-117 {
+    margin: 0;
+    font-family: var(--font-family-inter);
+    font-size: clamp(2rem, 3vw, 2.75rem);
+    line-height: 1.2;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    color: var(--text-rgb-16-86-102);
 }
 
 .project-page [class*='experience-'] {
@@ -128,11 +148,41 @@
 }
 
 .project-page [class*='text-block-'] p,
-.project-page [class*='text-block-'] span {
+.project-page [class*='text-block-'] span,
+.project-page [class*='text-block-'] li,
+.project-page [class*='text-block-'] a {
     margin: 0;
     font-family: var(--font-family-inter);
     color: rgba(0, 0, 0, 0.75);
     line-height: 1.6;
+}
+
+.project-page .project-entry__title {
+    margin: 0 0 8px;
+    text-align: left;
+    font-family: var(--font-family-inter);
+    font-size: 1.125rem;
+    line-height: 1.7;
+    font-weight: 700;
+    color: #000000;
+}
+
+.project-page .project-bullets,
+.project-page .project-detail-list,
+.project-page .project-meta-list {
+    margin: 10px 0 0 1.25rem;
+    padding: 0;
+    list-style: disc;
+}
+
+.project-page .project-bullets li,
+.project-page .project-detail-list li,
+.project-page .project-meta-list li {
+    margin-bottom: 6px;
+    font-family: var(--font-family-inter);
+    font-size: 1rem;
+    line-height: 1.7;
+    color: rgba(0, 0, 0, 0.8);
 }
 
 .project-page [class*='text-64'],
@@ -150,7 +200,8 @@
 .project-page [class*='text-124'],
 .project-page [class*='text-127'],
 .project-page [class*='text-167'],
-.project-page [class*='text-170'] {
+.project-page [class*='text-170'],
+.project-page .text-27 {
     font-size: 1.125rem;
     font-weight: 700;
     color: #000000;
